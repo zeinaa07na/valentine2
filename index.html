@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<head>
+<body>
+<div class="container">
+    <div>
+        <h1 class="header_text">Do You Want To Forgive Me?</h1>
+        <h1 class="header_text"> Pleaseee iiooo?</h1>
+    </div>
+    <div class="gif_container">
+        <img src="https://media1.giphy.com/media/kZKBPNcrWeBDOjFNO1/giphy.webp?cid=ecf05e475wu5mcc22vq7z6n42d832n8x7plj1sfbl54gjpvs&ep=v1_stickers_search&rid=giphy.webp&ct=s">
+    </div>
+    <div class="buttons">
+        <butto class="btn" id = "yesButton" onclick="nextPage()">YES</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()" onclick="MoveButton()">NO</button>
+        <script>
+            function nextPage() {
+                window.location.href = "yes.html";
+            }
+
+            function moveButton(){
+                var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                var x = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                document.getElementById('noButton').style.left = `${x}px`;
+                document.getElementById('noButton').style.top = `${y}px`;
+            }
+            </script>
+    </div>
+</div>
+</body>
+
+</head>
+
+</html>
